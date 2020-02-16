@@ -38,14 +38,15 @@
 }
 
 .flex-container{
+  font-size: 2em;
   display: block;
   columns: 6;
-  column-gap: 0.625em;
+  column-gap: 1.25em;
   column-fill: auto;
   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
           page-break-inside: avoid; /* Firefox */
                break-inside: avoid;
-  margin: 1.25em 1.25em 1.25em 1.25em;
+  margin: 2.25em 2.25em 2.25em 2.25em;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden
 }
