@@ -23,10 +23,12 @@ const Feed = props => {
       );
     return (
       <ScrollAnimation
-        animateIn="fadeIn"
+        animateIn="flipInY"
         animateOut="fadeOut"
         key={i}
-        delay={11 * i}
+        delay={11 * (Math.random() * preparedTweetsTriple.length)}
+        animationInDuration="1500"
+        offset={100}
       >
         {currentTweet}
       </ScrollAnimation>

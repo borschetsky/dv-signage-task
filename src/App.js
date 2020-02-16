@@ -1,26 +1,23 @@
-import React from 'react';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Feed from './pages/feed'
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import Feed from "./pages/feed";
 
 function App() {
- return (
+  return (
     <Router>
-        <Switch>
-          <Route path="/dark">
+      <Switch>
+      
+        <Route exact path="/">
           <div className="flex-container">
-              <Feed type={'dark'}/>
+            <Feed type={"dark"} />
           </div>
-          </Route>
-          <Route path="/light">
+        </Route>
+        <Route path="/light">
           <div className="flex-container">
-              <Feed type={'light'}/>
+            <Feed type={"light"} />
           </div>
-          </Route>
+        </Route>
       </Switch>
     </Router>
   );
