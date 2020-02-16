@@ -11,6 +11,7 @@
   break-inside: avoid;
   transition: transform 0.3s;
 }
+
 .post-container:hover {
   transform: scale(1.02);
 }

@@ -29,7 +29,12 @@ const TweetDark = props => {
           {tweet.screenName}
         </div>
         <div className="text">{tweet.text}</div>
-        <img src={tweet.img} ref={imgRef} onError={onErrorDisplayNone} alt="post"></img>
+        <img
+          src={tweet.img}
+          ref={imgRef}
+          onError={onErrorDisplayNone}
+          alt="post"
+        ></img>
       </div>
       <div className="right-bar"></div>
     </div>
