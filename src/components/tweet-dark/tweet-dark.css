@@ -75,6 +75,9 @@
     padding-top: 10px;
     margin: 10px 0 10px 0;
     grid-template-columns: minmax(30px, 70px) minmax(200px, 1fr) 35px;
+    -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
   }
   .left-side img {
     max-width: 40px;

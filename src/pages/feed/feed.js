@@ -26,7 +26,7 @@ const Feed = props => {
         animateIn="flipInY"
         animateOut="fadeOut"
         key={i}
-        delay={11 * (Math.random() * preparedTweetsTriple.length)}
+        delay={10 * (Math.random() * preparedTweetsTriple.length)}
         animationInDuration="1500"
         offset={100}
       >
